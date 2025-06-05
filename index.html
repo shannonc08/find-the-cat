@@ -57,7 +57,7 @@
         let random_left = 0;
         let catfound = false;
         let images_of_cats = ["https://en.scratch-wiki.info/w/images/thumb/ScratchCat-Small.png/200px-ScratchCat-Small.png",
-                              "cryingcat.png", "felixthecat.png"]
+                              "cryingcat.png", "bugcat.png", "garfield.png", "hellokitty.png", "nugget.png", "yellowcat.png"]
         let counter = 0;
 
         document.querySelector('#cat').addEventListener('click', function() {
@@ -65,7 +65,7 @@
             document.querySelector('#score').innerHTML = "You have found " + score + " Scratch Cats";
             document.getElementById("cat").style.opacity = "1";
             catfound = true;
-            if (counter == 2) {
+            if (counter == 6) {
                 counter = 0;
             } else {
                 counter = counter + 1;
