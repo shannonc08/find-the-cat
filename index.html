@@ -31,7 +31,7 @@
         let description = "There is an invisible cat hiding somewhere! Click around and look at the bottom right corner to see how close you are to it. Cats move every time you find one of them. Click below to get started, have fun!";
 
         for (i = 0; i < description.length; i++) {
-            setTimeout(function() {
+            setInterval(function() {
                 document.querySelector('#desc').innerHTML += description[i];
             }, 1000)
         }
