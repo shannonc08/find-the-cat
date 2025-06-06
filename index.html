@@ -6,6 +6,8 @@
         <title>Find the Cat</title>
         <style>
             body {
+                width: 500px;
+                text-align: center;
                 margin: auto;
                 background-color: #e1eafa;
             }
@@ -27,9 +29,11 @@
     <script>
 
         let description = "There is an invisible cat hiding somewhere! Click around and look at the bottom right corner to see how close you are to it. Cats move every time you find one of them. Click below to get started, have fun!";
-        for (i = 0; i < description.length; i++) {
-            document.querySelector('#desc').innerHTML.append = desc[i];
-        }
+        setTimeout(function() {
+            for (i = 0; i < description.length; i++) {
+            document.querySelector('#desc').innerHTML += description[i];
+            }
+        }, 100);
 
         document.querySelector('#startgame').addEventListener('click', function() {
             window.location.href = "game.html";
